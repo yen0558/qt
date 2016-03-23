@@ -55,7 +55,7 @@ static QWidget* qwidgetForPage(const Page* page)
 FloatRect screenRect(const Page* page)
 {
     if (QApplication::type() == QApplication::Tty)
-        return FloatRect(0,0,800,600);
+        return FloatRect(0,0,1280,1024);
 
     QWidget* qw = qwidgetForPage(page);
     if (!qw)
